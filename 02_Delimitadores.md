@@ -48,3 +48,7 @@ Las expresiones regulares son muy útiles para encontrar líneas específicas qu
 ^\[LOG.*\[ERROR\].*user:@zaier\] .*$ - Buscar lineas específicas con el usuario.
 
 ^\[LOG.*\[ERROR\].*user:@\w+?\] .*$ - Buscar cualquier usuario con correo.
+
+# Busqueda de Telefonos
+
+^\+?\d+[#pe]?\d*$ - Quiero una linea que empiece con un signo(+) o ninguno, seguido por uno o más números y ésto seguido por cualquier objeto que esté dentro de la clase [] exista o no, a continuación puede o no haber dígitos.
