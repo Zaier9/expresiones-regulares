@@ -38,3 +38,13 @@ el ^ se utiliza para indicar el principio de línea
 el $ se utiliza para indicar final de línea
 
 ^ ------------- $
+
+# Logs
+
+Las expresiones regulares son muy útiles para encontrar líneas específicas que nos dicen algo muy puntual dentro de los archivos de logs que pueden llegar a tener millones de líneas.
+
+^\[LOG.*\[ERROR\].*$ - Con ésta expresión encontramos todos los LOG que tengan ERROR.
+
+^\[LOG.*\[ERROR\].*user:@zaier\] .*$ - Buscar lineas específicas con el usuario.
+
+^\[LOG.*\[ERROR\].*user:@\w+?\] .*$ - Buscar cualquier usuario con correo.
