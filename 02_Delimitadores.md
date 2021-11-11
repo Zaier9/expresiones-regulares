@@ -58,3 +58,11 @@ Las expresiones regulares son muy útiles para encontrar líneas específicas qu
 Una de las cosas que más vamos a usar en la vida, seamos frontend o backend, serán directamente dominios o direcciones de internet; ya sea direcciones completas de archivo (una url) o puntualmente dominios para ver si es correcto un mail o no.
 
 https?:\/\/[\w\-\.]+\.\w{2,5}\/?\S* - Pedimos http y si existe que sea de forma segura también, los dos puntos no son reservados y lo ponemos sin escapar, en cambio al slash si hay que escaparlo. Luego creamos una clase en la cual puede haber letras, guiones y puntos. Después del punto puede haber de dos hasta cinco lentras del final del dominio (.com, .ar, .hola), escapamos nuevamente el slash si corresponde y eliminamos espacios vacios si los hay.
+
+# Mails
+
+Quedamos en que ya podemos definir URLs, y dentro de las URLs están los dominios. No es infalible, pero es muy útil para detectar la gran mayoría de errores que cometen los usuarios al escribir sus emails.
+
+@[\w\.\-]{3,}\.\w{2,5} - Con ésta parte ya tenemos el dominio completo posterior al @, ahora vamos a enfocarnos el el nombre del posible usuario.
+
+[\w\._]{5,30}\+?[\w]{0,10}@ - Construimos una clase que contenga una palabra o dígito de ASCII de entre 5 a 30 caracteres que puede o no tener el símbolo (+), y agregamos otra clase que puede contener algún alias.
