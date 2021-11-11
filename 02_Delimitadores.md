@@ -52,3 +52,9 @@ Las expresiones regulares son muy útiles para encontrar líneas específicas qu
 # Busqueda de Telefonos
 
 ^\+?\d+[#pe]?\d*$ - Quiero una linea que empiece con un signo(+) o ninguno, seguido por uno o más números y ésto seguido por cualquier objeto que esté dentro de la clase [] exista o no, a continuación puede o no haber dígitos.
+
+# URL's
+
+Una de las cosas que más vamos a usar en la vida, seamos frontend o backend, serán directamente dominios o direcciones de internet; ya sea direcciones completas de archivo (una url) o puntualmente dominios para ver si es correcto un mail o no.
+
+https?:\/\/[\w\-\.]+\.\w{2,5}\/?\S* - Pedimos http y si existe que sea de forma segura también, los dos puntos no son reservados y lo ponemos sin escapar, en cambio al slash si hay que escaparlo. Luego creamos una clase en la cual puede haber letras, guiones y puntos. Después del punto puede haber de dos hasta cinco lentras del final del dominio (.com, .ar, .hola), escapamos nuevamente el slash si corresponde y eliminamos espacios vacios si los hay.
