@@ -89,3 +89,9 @@ Esta clase nos va a servir para ver unos tips comunes de qué hacer y sobre todo
     -34 54' 32.00"E, -3 21' 67.00"S
 
 -?\d{1,3}\s\d{1,2}' \d{1,2}\.\d{2,2}"[WE],\s?\-?\d{1,3}\s\d{1,2}' \d{1,2}\.\d{2,2}"[NS]
+
+# Busqueda y reemplazo
+
+Al igual que una navaja suiza, las expresiones regulares son una herramienta increíblemente útil pero tienes que darle la importancia y las responsabilidades adecuadas a cada una, ya que no son la panacea, no solucionan todos los problemas.
+
+El uso más conveniente de las expresiones regulares es buscar coincidencias o matches de cadenas en un texto, y si es necesario, reemplazarlas con un texto diferente.
