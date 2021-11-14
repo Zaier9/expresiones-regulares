@@ -95,3 +95,9 @@ Esta clase nos va a servir para ver unos tips comunes de qué hacer y sobre todo
 Al igual que una navaja suiza, las expresiones regulares son una herramienta increíblemente útil pero tienes que darle la importancia y las responsabilidades adecuadas a cada una, ya que no son la panacea, no solucionan todos los problemas.
 
 El uso más conveniente de las expresiones regulares es buscar coincidencias o matches de cadenas en un texto, y si es necesario, reemplazarlas con un texto diferente.
+
+# Uso de REGEX para descomponer querys GET
+
+Al hacer consultas a sitios web mediante el método GET se envían todas las variables al servidor a través de la misma URL.
+
+La parte de esta url que viene luego del signo de interrogación ? se le llama query del request que es: variable1=valor1&variable2=valor2&... y así tantas veces como se necesite. En esta clase veremos como extraer estas variables usando expresiones regulares.
