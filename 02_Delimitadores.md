@@ -107,22 +107,22 @@ https://www.google.com/search?q=regex+platzi&oq=regex+platzi&aqs=chrome..69i57j6
 https://co.search.yahoo.com/search?p=flickr&fr=yfp-t&fp=1&toggle=1&cop=mss&ie=UTF-8
 
 [\?&]\w+=([^&\n]+)
-\ $1 
+\ $1 => 
 
 https://b3co.com/
-  fotografia
-  search
-  blog
+  fotografia =>  
+  search =>  
+  blog =>  
 https://www.google.com/search
-  regex+platzi
-  regex+platzi
-  chrome..69i57j69i60.6885j0j9
-  chrome
-  UTF-8
+  regex+platzi =>  
+  regex+platzi =>  
+  chrome..69i57j69i60.6885j0j9 =>  
+  chrome =>  
+  UTF-8 =>  
 https://co.search.yahoo.com/search
-  flickr
-  yfp-t
-  1
-  1
-  mss
-  UTF-8
+  flickr =>  
+  yfp-t =>  
+  1 =>  
+  1 =>  
+  mss =>  
+  UTF-8 =>  
