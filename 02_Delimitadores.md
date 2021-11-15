@@ -101,3 +101,28 @@ El uso más conveniente de las expresiones regulares es buscar coincidencias o m
 Al hacer consultas a sitios web mediante el método GET se envían todas las variables al servidor a través de la misma URL.
 
 La parte de esta url que viene luego del signo de interrogación ? se le llama query del request que es: variable1=valor1&variable2=valor2&... y así tantas veces como se necesite. En esta clase veremos como extraer estas variables usando expresiones regulares.
+
+https://b3co.com/?s=fotografia&mode=search&module=blog
+https://www.google.com/search?q=regex+platzi&oq=regex+platzi&aqs=chrome..69i57j69i60.6885j0j9&sourceid=chrome&ie=UTF-8
+https://co.search.yahoo.com/search?p=flickr&fr=yfp-t&fp=1&toggle=1&cop=mss&ie=UTF-8
+
+[\?&]\w+=([^&\n]+)
+\ $1 
+
+https://b3co.com/
+  fotografia
+  search
+  blog
+https://www.google.com/search
+  regex+platzi
+  regex+platzi
+  chrome..69i57j69i60.6885j0j9
+  chrome
+  UTF-8
+https://co.search.yahoo.com/search
+  flickr
+  yfp-t
+  1
+  1
+  mss
+  UTF-8
