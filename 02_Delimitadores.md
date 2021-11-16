@@ -139,3 +139,11 @@ Usaremos las expresiones regulares en:
     * PHP
     * Python
     * Javascript
+
+# `grep` y `find` desde consola
+
+En los sistemas operativos basados en UNIX podemos utilizar expresiones regulares a través de la consola mediante los comandos grep y find.
+
+  * grep: Nos ayuda a buscar dentro de los archivos, textos muy puntuales utilizando una versión muy reducida de expresiones regulares.
+
+  * find: Se utiliza para encontrar archivos en un determinado directorio a partir de diversas reglas de búsqueda que incluyen expresiones regulares.
